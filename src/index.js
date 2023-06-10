@@ -1,5 +1,5 @@
 import { mult } from "./calc";
-
+// import Icon from "./icon.png";  // ! for imgs
 import("./index.css");
 // ! It will throw an error because webpack is taking the css code as javaScript.
 // ! Here we will use loder
