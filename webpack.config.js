@@ -18,8 +18,15 @@ module.exports = {
       //   test: /\[png|svg|jpg|jpeg|gif]$/,
       //   // Here we are telling webpack to look for a file if it is ending with [png|svg|jpg|jpeg|gif] use asset/resource
       //   type: ["asset/resource"],
-      //   // webpack will not parse the css files anymore asset/resource will parse them.
+      //   // webpack will not parse the [png|svg|jpg|jpeg|gif] files anymore asset/resource will parse them.
       // },
+      {
+        test: /\.js$/,
+        // Here we are telling webpack to look for a file ending with .js use babel-loader
+        use: ["babel-loader"],
+        // webpack will not parse the js files anymore babel-loader will parse them.
+        exclude: /node_modules/
+      },
     ],
   },
 };
