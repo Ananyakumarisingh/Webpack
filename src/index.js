@@ -23,11 +23,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 ReactDOM.render(
-    React.createElement("h1", {className: "redtext"},[ 
-        "Hello Webpack from react",
-        React.createElement("i", null, " italic")
+//     React.createElement("h1", {className: "redtext"},[ 
+//         "Hello Webpack from react",
+//         React.createElement("i", null, " italic")
     
-]),   // What 
+// ]),   // What 
+
+    <h1>Hello New React</h1>,
     document.getElementById("root")   // Where
 )
 
